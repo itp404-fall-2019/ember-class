@@ -1,0 +1,9 @@
+<h2>Organization</h2>
+
+{{#each model as |member|}}
+<LinkTo @route="organization.user" @model={{member.login}}>
+  <img src={{member.avatar_url}} alt={{member.login}} width="75">
+</LinkTo>
+{{/each}}
+
+{{outlet}}

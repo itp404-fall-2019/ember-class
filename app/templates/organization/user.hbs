@@ -1,0 +1,7 @@
+<h2>User</h2>
+
+{{#each model as |repo|}}
+<div>
+  {{repo.name}} (⭐️ {{repo.stargazers_count}})
+</div>
+{{/each}}

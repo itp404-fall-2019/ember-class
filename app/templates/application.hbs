@@ -1,5 +1,28 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<h1>My Site</h1>
+
+<nav>
+  <ul>
+    <li>
+      <LinkTo @route="index">
+        Home
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route="about">
+        About
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route="organization" @model="emberjs">
+        Ember.js
+      </LinkTo>
+    </li>
+    <li>
+      <LinkTo @route="organization" @model="facebook">
+        Facebook
+      </LinkTo>
+    </li>
+  </ul>
+</nav>
 
 {{outlet}}
